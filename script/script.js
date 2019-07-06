@@ -22,13 +22,13 @@ function showColorBox () {
     const square = document.createElement ('div');
     document.body.appendChild(square);
     if (btnRed == true) {
-        square.classList.add('redSquare')
+        square.classList.add('redSquare');
     } else if (btnGreen == true) {
-        square.classList.add('greenSquare')
+        square.classList.add('greenSquare');
     } else if (btnBlue == true) {
-        square.classList.add('blueSquare')
+        square.classList.add('blueSquare');
     }else if (btnBlack == true) {
-        square.classList.add('blackSquare')
+        square.classList.add('blackSquare');
     }
 }
 
