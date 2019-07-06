@@ -36,22 +36,22 @@ var btnRed = document.createElement('button');
 btnRed.className = "testButton";
 btnRed.innerHTML = "<strong>Красный</strong>";
 document.body.appendChild(btnRed);
-btnRed.addEventListener('click', showRedBox);
+btnRed.addEventListener('click', showColorBox);
 
 var btnGreen = document.createElement('button');
 btnGreen.className = "testButton";
 btnGreen.innerHTML = "<strong>Зеленый</strong>";
 document.body.appendChild(btnGreen);
-btnGreen.addEventListener('click', showGreenBox);
+btnGreen.addEventListener('click', showColorBox);
 
 var btnBlue = document.createElement('button');
 btnBlue.className = "testButton";
 btnBlue.innerHTML = "<strong>Синий</strong>";
 document.body.appendChild(btnBlue);
-btnBlue.addEventListener('click', showBlueBox);
+btnBlue.addEventListener('click', showColorBox);
 
 var btnBlack = document.createElement('button');
 btnBlack.className = "testButton";
 btnBlack.innerHTML = "<strong>Чёрный</strong>";
 document.body.appendChild(btnBlack);
-btnBlack.addEventListener('click', showBlackBox);
+btnBlack.addEventListener('click', showColorBox);
