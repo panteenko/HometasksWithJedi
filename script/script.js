@@ -23,7 +23,7 @@ function showColorBox () {
     document.body.appendChild(square);
     if (btnRed == true) {
         square.classList.add('redSquare')
-    } else if (btnGreen ==) {
+    } else if (btnGreen == true) {
         square.classList.add('greenSquare')
     } else if (btnBlue == true) {
         square.classList.add('blueSquare')
