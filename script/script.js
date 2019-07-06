@@ -1,22 +1,35 @@
-function showRedBox () {
-    const square = document.createElement('div');
-        square.classList.add('redSquare');
-        document.body.appendChild(square);
-}
-function showGreenBox () {
-    const square = document.createElement('div');
-        square.classList.add('greenSquare');
-        document.body.appendChild(square);
-}
-function showBlueBox () {
-    const square = document.createElement('div');
-        square.classList.add('blueSquare');
-        document.body.appendChild(square);
-}
-function showBlackBox () {
-    const square = document.createElement('div');
-        square.classList.add('blackSquare');
-        document.body.appendChild(square);
+// function showRedBox () {
+//     const square = document.createElement('div');
+//         square.classList.add('redSquare');
+//         document.body.appendChild(square);
+// }
+// function showGreenBox () {
+//     const square = document.createElement('div');
+//         square.classList.add('greenSquare');
+//         document.body.appendChild(square);
+// }
+// function showBlueBox () {
+//     const square = document.createElement('div');
+//         square.classList.add('blueSquare');
+//         document.body.appendChild(square);
+// }
+// function showBlackBox () {
+//     const square = document.createElement('div');
+//         square.classList.add('blackSquare');
+//         document.body.appendChild(square);
+// }
+function showColorBox () {
+    const square = document.createElement ('div');
+    document.body.appendChild(square);
+    if (btnRed == true) {
+        square.classList.add('redSquare')
+    } else if (btnGreen ==) {
+        square.classList.add('greenSquare')
+    } else if (btnBlue == true) {
+        square.classList.add('blueSquare')
+    }else if (btnBlack == true) {
+        square.classList.add('blackSquare')
+    }
 }
 
 var btnRed = document.createElement('button');
