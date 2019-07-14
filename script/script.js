@@ -18,40 +18,49 @@
 //         square.classList.add('blackSquare');
 //         document.body.appendChild(square);
 // }
+
+
 function showColorBox () {
+    
     const square = document.createElement ('div');
     document.body.appendChild(square);
-    if (btnRed == true) {
-        square.classList.add('redSquare');
-    } else if (btnGreen == true) {
-        square.classList.add('greenSquare');
-    } else if (btnBlue == true) {
-        square.classList.add('blueSquare');
-    }else if (btnBlack == true) {
-        square.classList.add('blackSquare');
-    }
+    square.classList.add('greenSquare');
+
+    
 }
 
 var btnRed = document.createElement('button');
 btnRed.className = "testButton";
 btnRed.innerHTML = "<strong>Красный</strong>";
 document.body.appendChild(btnRed);
-btnRed.addEventListener('click', showColorBox);
+btnRed.addEventListener('click', function(event){
+    var target = event.target;
+    showColorBox(target);
+});
 
 var btnGreen = document.createElement('button');
 btnGreen.className = "testButton";
 btnGreen.innerHTML = "<strong>Зеленый</strong>";
 document.body.appendChild(btnGreen);
-btnGreen.addEventListener('click', showColorBox);
+btnGreen.addEventListener('click', function(event){
+    var target = event.target;
+    showColorBox(target);
+});
 
 var btnBlue = document.createElement('button');
 btnBlue.className = "testButton";
 btnBlue.innerHTML = "<strong>Синий</strong>";
 document.body.appendChild(btnBlue);
-btnBlue.addEventListener('click', showColorBox);
+btnBlue.addEventListener('click', function(event){
+    var target = event.target;
+    showColorBox(target);
+});
 
 var btnBlack = document.createElement('button');
 btnBlack.className = "testButton";
 btnBlack.innerHTML = "<strong>Чёрный</strong>";
 document.body.appendChild(btnBlack);
-btnBlack.addEventListener('click', showColorBox);
+btnBlack.addEventListener('click', function(event){
+    var target = event.target;
+    showColorBox(target);
+});
