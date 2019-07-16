@@ -9,7 +9,6 @@ function pushButtonHandler (event) {
     if (square.classList.contains('small-square')) {
         square.classList.remove('small-square');
         square.classList.add('big-square');
-        square.classList.add(event.target.id);
     } else if (square.classList.contains('big-square')) {
         square.classList.remove('big-square');
     }
