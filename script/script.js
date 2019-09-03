@@ -1,5 +1,5 @@
 const wrap = document.getElementById('wrapper');
-let square;
+let square = {};
 
 function pushButtonHandler (event) {
 
@@ -7,14 +7,14 @@ function pushButtonHandler (event) {
 
     if (!document.querySelector('.small-square') && !document.querySelector('.big-square')) {
     
-        let square = document.createElement('div');
+        square = document.createElement('div');
         square.classList.add('small-square');
         wrap.appendChild(square);
 
     } else if (document.querySelector('.small-square')) {
 
-        square.classList.add('big-square');
         square.classList.remove('small-square');
+        square.classList.add('big-square');
         
     } else {
 
