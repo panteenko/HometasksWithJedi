@@ -18,7 +18,8 @@ function pushButtonHandler (event) {
         
     } else {
 
-        square.classList.remove('big-square');
+
+        wrap.removeChild(square);
 
     }
 
