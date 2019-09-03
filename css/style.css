@@ -1,10 +1,12 @@
 .small-square {
     width: 50px;
     height: 50px;
+    background: red;
 }
 .big-square {
     width: 100px;
     height: 100px;
+    background: green;
 }
 .redSquare {
     background: red;

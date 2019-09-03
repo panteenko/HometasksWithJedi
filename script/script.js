@@ -5,21 +5,22 @@ function pushButtonHandler (event) {
 
     if (!event.target.classList.contains ('button')) return;
     
-    if (!square.classList.contains ('small-square') && square.classList.contains ('big-square')) {
-        document.createElement ('div');
-        square.classList.add ('small-square');
-        square.classList.add (event.target.id);
-        wrap.appendChild(square);
+    let square = document.createElement('div');
+    square.classList.add('small-square');
+    wrap.appendChild(square);
 
-    } else if (square.classList.contains ('small-square')) {
+    checkClass(square);
+
+}
+
+function checkClass (square) {
+
+    if (document.getElementsByClassName('small-square')) {
         square.classList.remove('small-square');
         square.classList.add('big-square');
-    } else if (square.classList.contains ('big-square')) {
-        square.classList.remove('big-square');
     }
     
 
 }
 
 wrap.addEventListener('click', pushButtonHandler);
-
