@@ -1,5 +1,5 @@
 const wrap = document.getElementById('wrapper');
-let square = {};
+let square;
 
 function pushButtonHandler (event) {
 
@@ -17,7 +17,6 @@ function pushButtonHandler (event) {
         square.classList.add('big-square');
         
     } else {
-
 
         wrap.removeChild(square);
 
