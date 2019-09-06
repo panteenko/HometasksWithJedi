@@ -5,7 +5,7 @@ function pushButtonHandler (event) {
 
     if (!event.target.classList.contains ('button')) return; 
 
-    const square = document.querySelector('.small-square') || document.querySelector('.big-square');
+    let square = document.querySelector('.small-square') || document.querySelector('.big-square');
     
     if (!square) {
     
