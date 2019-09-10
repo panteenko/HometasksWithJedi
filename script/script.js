@@ -36,7 +36,8 @@ function pushButtonHandler (event) {
     if (!event.target.classList.contains ('button')) return; 
 
     let target = event.target.id;
-    let square = document.querySelector(target+'Square');
+    let targetClass = '.' + target + 'Square';
+    let square = document.querySelector(targetClass);
 
     
     if (!square) {
@@ -46,12 +47,12 @@ function pushButtonHandler (event) {
         square.classList.add(target+'Square');
         wrap.appendChild(square); 
 
-    } else if (square.classList.contains('small-square') && square.classList.contains(target+'Square')) { 
+    } else if (square.classList.contains('small-square') && square.classList.contains(targetClass)) { 
         
         square.classList.remove('small-square'); 
         square.classList.add('big-square'); 
         
-    } else if (square.classList.contains('big-square') && square.classList.contains(target+'Square')) {
+    } else if (square.classList.contains('big-square') && square.classList.contains(targetClass)) {
 
         wrap.removeChild(square); 
     }
