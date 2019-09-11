@@ -57,7 +57,29 @@ function pushButtonHandler (event) {
         wrap.removeChild(square); 
     }
 }
-
-
 wrap.addEventListener('click', pushButtonHandler); 
+
+
+
+
+
+let timer = document.getElementById('timer');
+let startBtn = document.querySelector('.start');
+let stopBtn = document.querySelector('.stop');
+
+function startCountDown () {
+    let toNum = Number(timer);
+    setInterval(function () {
+
+        toNum++;
+        timer.textContent = toNum;
+
+    }, 1000);
+}
+
+
+startBtn.addEventListener('click', startCountDown);
+// stopBtn.addEventListener('click', stopCountDown);
+
+
 

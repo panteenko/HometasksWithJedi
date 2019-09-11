@@ -18,3 +18,7 @@
 .blackSquare {
     background: black;
 }
+
+.timer {
+    font-size: 45px;
+}

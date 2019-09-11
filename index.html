@@ -6,12 +6,18 @@
 </head>
 <body>
     <h1>Таск №1</h1>
-    <p>При нажатии на кнопку, появляется красный квадрат 100х100 пикселей</p>
+    <p>При нажатии на кнопку, появляется квадрат нужного цвета 50х50, при посторном нажатии 100х100 пикселей, при третьем нажатии удаляется со страницы</p>
     <div id="wrapper">
         <button class="button" class="redBtn" id="red">Red</button>
         <button class="button" class="greenBtn" id= "green">Green</button>
         <button class="button" class="blueBtn" id="blue">Blue</button>
         <button class="button" class="blackBtn" id="black">Black</button>
+    </div>
+    <div id='timer-container'>
+        <h1>Таймер</h1>
+        <div class='timer' id='timer'>0</div>
+        <button class="start btn">Start</button>
+        <button class="stop btn">Stop</button>
     </div>
 
     <script src="script/script.js"></script>
