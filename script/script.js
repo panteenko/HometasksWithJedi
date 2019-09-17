@@ -81,7 +81,7 @@ function startCountDown () {
 
 function stopCountDown () {
 
-    clearInterval();
+    clearInterval(int);
 
 }
 
