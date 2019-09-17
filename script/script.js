@@ -60,26 +60,35 @@ function pushButtonHandler (event) {
 wrap.addEventListener('click', pushButtonHandler); 
 
 
-
+//Таймер начинается здесь
 
 
 let timer = document.getElementById('timer');
-let startBtn = document.querySelector('.start');
-let stopBtn = document.querySelector('.stop');
+const startBtn = document.querySelector('button.start');
+const stopBtn = document.querySelector('button.stop');
 
 function startCountDown () {
-    let toNum = Number(timer);
-    setInterval(function () {
+    let toNum = Number(timer.textContent);
+
+    let int = setInterval(function () {
 
         toNum++;
         timer.textContent = toNum;
-
+        
     }, 1000);
+
+}
+
+function stopCountDown () {
+
+    clearInterval();
+
 }
 
 
+
 startBtn.addEventListener('click', startCountDown);
-// stopBtn.addEventListener('click', stopCountDown);
+stopBtn.addEventListener('click', stopCountDown);
 
 
 
