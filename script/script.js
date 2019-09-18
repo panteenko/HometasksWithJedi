@@ -66,12 +66,13 @@ wrap.addEventListener('click', pushButtonHandler);
 let timer = document.getElementById('timer');
 const startBtn = document.querySelector('button.start');
 const stopBtn = document.querySelector('button.stop');
+const refreshBtn = document.querySelector('button.refresh');
 let int = null;
 function startCountDown () {
     let toNum = Number(timer.textContent);
 
     int = setInterval(function () {
-
+        
         toNum++;
         timer.textContent = toNum;
         
@@ -85,8 +86,17 @@ function stopCountDown () {
 
 }
 
+function refreshCounter () {
+    if(int) {
+        clearInterval(int);
+    }
+    timer.textContent = 0;
+
+}
+
 startBtn.addEventListener('click', startCountDown);
 stopBtn.addEventListener('click', stopCountDown);
+refreshBtn.addEventListener('click', refreshCounter);
 
 
 
